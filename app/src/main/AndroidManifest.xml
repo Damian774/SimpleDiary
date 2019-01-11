@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="app.com.simplediary">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"> <!-- suppress google indexing warning -->
+
+
+        <activity android:name=".views.AddNoteActivity" />
+        <activity
+            android:name=".views.HomeScreenActivity"
+            android:label="@string/title_activity_home_screen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".views.ShowNotesActivity"
+            android:label="@string/title_grade_list"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".views.NoteDetailActivity"
+            android:label="@string/title_grade_detail"
+            android:parentActivityName=".views.ShowNotesActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="app.com.simplediary.views.ShowNotesActivity" />
+        </activity>
+    </application>
+
+</manifest>
