@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Student\'s index</string>
+    <string name="app_name">Simple notepad</string>
     <string name="action_settings">Settings</string>
 
     <string-array name="labels_array">
@@ -8,7 +8,7 @@
         <item>Mobile</item>
         <item>Other</item>
     </string-array>
-    <string name="title_activity_home_screen">HomeScreenActivity</string>
+    <string name="title_activity_home_screen">Ekran główny</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Simple notepad</string>
@@ -88,9 +88,9 @@
 
     <string name="pref_title_vibrate">Vibrate</string>
     <string name="error_no_categories_added_text">Add category first</string>
-    <string name="title_grade_list">Grades</string>
-    <string name="title_grade_detail">Grade Detail</string>
-    <string name="grade_details_bar_title">Grade details</string>
+    <string name="title_grade_list">Notes</string>
+    <string name="title_grade_detail">Note Detail</string>
+    <string name="grade_details_bar_title">Note details</string>
     <string name="menu_grade_delete">Delete</string>
     <string name="menu_grade_edit">Edit</string>
 </resources>
